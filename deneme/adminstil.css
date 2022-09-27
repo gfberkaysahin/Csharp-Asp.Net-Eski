@@ -1,0 +1,263 @@
+﻿body {
+    background-color: white;
+    font-family: 'Trebuchet MS' , Arial
+}
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+a {
+    text-decoration:none;
+    color:#555;
+}
+    a:hover{
+        color:#999;
+    }
+
+.wrapperadmin {
+    width: 960px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+header{
+    float:left;
+    width: 100%;
+    height:45px;
+    background-color:#fff
+}
+header .logo{
+    float:left;
+    height:45px;
+    width:89px;
+    border-right:1px solid #ff0000;
+    text-align:center;
+    line-height:45px;
+    color: #990000;
+}
+
+
+header nav{
+    float:left;
+    width:700px;
+    height:45px;
+    border-right:1px solid #ff0000;
+    
+    line-height:45px;
+}
+
+    header nav ul{
+    list-style:none;
+
+    }
+        header nav ul li{
+        float:left;
+        margin:0 12px;
+        color:#555;
+        cursor:default;
+    
+
+    }
+.btnUye{
+        float:left;
+        line-height:40px;
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        margin-left: 0px;
+}
+    .btnUye:hover{
+        color:#999;
+
+    }
+
+.içerik{
+    width:959px;
+    height:112px;
+    background-color:#fff;   
+}
+.btnEkle{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        margin-left: 0px;
+}
+    .btnEkle:hover{
+        color:#999;
+
+    }
+.btnSil{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        margin-left: 0px;
+}
+    .btnSil:hover{
+        color:#999;
+
+    }
+.üyeSil{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        margin-left: 0px;
+}
+    .üyeSil:hover{
+        color:#999;
+
+    }
+
+.btnAO{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        margin-left: 0px;
+}
+    .btnAO:hover{
+        color:#999;
+
+    }
+.btnYE{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnYE:hover{
+        color:#999;
+
+    }
+.btnYS{
+        
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnYS:hover{
+        color:#999;
+
+    }
+.btnDE{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnDE:hover{
+        color:#999;
+
+    }
+.btnDS{
+        
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnDS:hover{
+        color:#999;
+
+    }
+.btnasEkle{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnasEkle:hover{
+        color:#999;
+
+    }
+.btnasSil{
+        
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnasSil:hover{
+        color:#999;
+
+    }
+.btnSE{
+        float:left;
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnSE:hover{
+        color:#999;
+
+    }
+.btnSS{
+        
+        
+        text-align:center;
+        color:#555;
+        cursor:pointer;
+        background-color:white;
+        font-family: 'Trebuchet MS' , Arial;
+        text-decoration:none;
+        
+}
+    .btnSS:hover{
+        color:#999;
+

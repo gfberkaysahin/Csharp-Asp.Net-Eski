@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="1admin.master.cs" Inherits="deneme._1admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Paneli</title>
+
+    <link href="adminstil.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="wrapperadmin">
+
+        <header>
+            <div class="logo">
+                VAN FM
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        &nbsp;&nbsp;&nbsp; <a href="adminyayıncı.aspx">Yayıncı</a>
+                          
+                    </li>
+                    
+                    <li>
+                        <a href="adminduyuru.aspx">Duyurular</a>
+                    </li>
+                    
+                    <li>
+                        <a href="Üye Sil.aspx">Üye Sil</a>
+                    </li>
+                    <li>
+                        <a href="admin şifre.aspx">Admin Şifre</a>
+                    </li>
+                    
+                    <li>
+                        <a href="adminseçtiklerimiz.aspx">Seçtiklerimiz</a>
+                    </li>
+                    <li>
+                        <a href="adminsosyalmedya.aspx">SMedya</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <asp:Button ID="Button1" CssClass="btnUye" runat="server" Height="40px" style="margin-left: 9px" Text="Üye Sayfası" Width="83px" OnClick="Button1_Click" />
+        </header>
+
+
+        <div class="içerik">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        
+                </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    
+        
+    
+    </form>
+</body>
+</html>

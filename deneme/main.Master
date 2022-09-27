@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="deneme.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Van FM</title>
+    <link href="stil.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    
+    <script type ="text/javascript">
+
+        $("document").ready(function () {
+
+            $("header nav ul li.konular-wrap").mouseover(function () {
+
+                $("header nav ul li.konular-wrap .konular").css("display", "block")
+
+            })
+            $("header nav ul li.konular-wrap").mouseleave(function () {
+
+                $("header nav ul li.konular-wrap .konular").css("display", "none")
+
+            })
+
+        })
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .btnArama {}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="wrapper">
+            <header>
+
+                <div class="logo">
+                    VAN FM
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/">Canlı Dinle</a>
+                          
+                        </li>
+                        <li class="konular-wrap">
+                            Bilgiler
+                            
+                            <div class="konular">
+                                <ul>
+                                    <li>
+                                        <a href="yayıncı bilgileri.aspx">Yayıncı Bilgileri</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="reklam bilgileri.aspx">Reklam Bilgileri</a>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="iletişim.aspx">İletişim</a>
+                        </li>
+                        <li>
+                            <a href="Sosyal Medya.aspx">Sosyal Medya</a>
+                        </li>
+                        <li>
+                            <a href="seçtiklerimiz.aspx">Seçtiklerimiz</a>
+                        </li>
+                        <li>
+                            <a href="işortağım.aspx">İş Ortağım</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                    <asp:Button ID="btnArama" CssClass="btnAdminG" Text="Admin Girişi" runat="server" Height="45px" Width="92px" OnClick="btnArama_Click" />
+            </header>
+            
+            <div class="banner";>
+                
+            </div>
+
+            <div class="sol-taraf">
+                
+                <div class="hizli-kayit">
+                    <asp:Panel ID="pnlGiris" runat="server">
+
+              
+
+                    <div class="üst">
+                        Kullanıcı Girişi
+                    </div>
+                    <div class="alt">
+                        <div class="kullanici">
+
+                            <span>Kullanıcı adı</span>
+                            <asp:TextBox ID="txtkullaniciAdi" CssClass="textbox" runat="server" />
+                        </div>
+                        <div class="sifre">
+                            <span>Şifre</span>
+                            <asp:TextBox ID="txtSifre" CssClass="textbox" runat="server" TextMode="Password"/>
+
+                        </div>
+                        
+                        <a href="Kaydol.aspx" class="btnKayit">Kaydol</a>
+                        <asp:Button ID="btnGiris" CssClass="btnGiris" Text="Giriş" runat="server" OnClick="btnGiris_Click" />
+                        <asp:Label ID="lblSonuc" Text="" runat="server" />
+
+                    </div>
+                    </asp:Panel>
+
+                    <asp:Panel ID="pnlKullanici" runat="server" CssClass="pnlKullanici">
+
+                        Hoşgeldiniz, <asp:Label ID="lblKullaniciAdi" Text="" runat="server"/>
+                        <br />
+                        <asp:Button ID="btnCikis" Text="Çıkış" runat="server" OnClick="btnCikis_Click1" CssClass="KullaniciCikisi" />
+                    </asp:Panel>
+
+
+                </div>
+                <div class="duyurular">
+                    <div class="üst">
+                        Duyurular
+                    </div>
+
+                    <div class="alt">
+                        <asp:ListView ID ="lstDuyuru" runat ="server">
+                            <ItemTemplate>
+                                <div class="duyuru-wrap">
+                                    <asp:Label Text='<%#Eval("Baslik") %>' runat="server" /><br />
+                                    <asp:Label Text='<%#Eval("Duyuru") %>' runat="server" /><br />
+                                    <asp:Label Text='<%#Eval("Tarih") %>' runat="server" />
+
+                                </div>
+
+                            </ItemTemplate>
+                        </asp:ListView>
+                        
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="içerik">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <footer>
+                Berkay Şahin Tasarımıdır © 2020. 
+            </footer>
+
+
+
+        </div>
+    
+        
+    
+    </form>
+</body>
+</html>
